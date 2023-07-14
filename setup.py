@@ -1,9 +1,11 @@
 from distutils.core import setup
-
+from setuptools import find_packages
 setup(
     name='pep8_notebook_check',
     version='1',
     packages=[''],
+    package_dir={'src'},
+    packages=find_packages('src'),
     url='',
     license='MIT',
     author='dulude',
