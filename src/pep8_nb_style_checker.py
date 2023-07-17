@@ -1,6 +1,6 @@
 """
 This script uses flake8 to perform a PEP8 style check on the python code embedded in a jupyter notebook.
-Based on jdat_notebooks/notebook-pep8-check.yml.
+Based on https://github.com/spacetelescope/jdat_notebooks/blob/main/.github/helpers/pep8_nb_checker.py.
 
 """
 import argparse
