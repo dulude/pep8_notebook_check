@@ -132,7 +132,11 @@ def nb_style_checker(nb_file):
         warns = wf.readlines()
 
     # Ignore lines with PEP 8 codes on ignore list
-    codes_to_ignore = ["E261", "E501", "F821", "W291", "W293"]
+    codes_to_ignore = ["E261", # At least two spaces before inline comment
+                       "E501", # line too long
+                       "F821", # undefined name
+                       "W291", # Trailing whitespace
+                       "W293"] # Blank line contains whitespace
     lines_to_ignore = []
     for item in enumerate(warns):
         line_num = item[0]
@@ -142,7 +146,7 @@ def nb_style_checker(nb_file):
             lines_to_ignore.append(line_num)
     if len(lines_to_ignore) > 0:
         warns = [i for j, i in enumerate(warns) if j not in lines_to_ignore]
-    print("IT GOT HERE!")
+
     # if there are none, QUIT while we're ahead
     if not warns:
         print(f"{nb_file} is clean!")
