@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: pep8-nb-style-checker
+Version: 0.1
+Summary: perform PEP8 style check on python code imbedded in Jupyter notebooks
+Author: Michael J. Dulude

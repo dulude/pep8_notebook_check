@@ -1,0 +1,8 @@
+setup.py
+pep8_nb_style_checker/__init__.py
+pep8_nb_style_checker/pep8_nb_style_checker.py
+pep8_nb_style_checker.egg-info/PKG-INFO
+pep8_nb_style_checker.egg-info/SOURCES.txt
+pep8_nb_style_checker.egg-info/dependency_links.txt
+pep8_nb_style_checker.egg-info/not-zip-safe
+pep8_nb_style_checker.egg-info/top_level.txt
